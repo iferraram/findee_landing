@@ -22,13 +22,7 @@ function Hero({
           <div className="hero-copy pb-16 pt-10 lg:min-w-[40rem] lg:pr-20 lg:pt-16">
             <div className="mx-auto w-full max-w-3xl">
               <div className="mb-4 flex flex-row items-center">
-                <img
-                  alt="icon"
-                  height={icon}
-                  src="/assets/findee.png"
-                  width={60}
-                  className="mr-2"
-                />
+                <img alt="icon" height={'auto'} src={icon} width={60} className="mr-2" />
                 <h1 className="mt-0 text-4xl font-bold md:text-5xl">{title}</h1>
               </div>
               <p className="prose prose-xl m-auto mb-4 text-gray-500">{content}</p>

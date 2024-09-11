@@ -23,7 +23,7 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="faqs" element={<FaqsPage />} />
-          <Route path="support" element={<SupportPage />} />
+          {/* <Route path="support" element={<SupportPage />} /> */}
         </Routes>
       </ScrollToTop>
     </BrowserRouter>

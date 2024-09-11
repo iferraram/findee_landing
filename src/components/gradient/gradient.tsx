@@ -9,7 +9,7 @@ function Gradient({ className }: { className?: string }) {
           alt="Findee"
           style={{
             width: '60%',
-            marginTop: 40,
+            marginTop: 60,
             height: 'auto',
             margin: 'auto',
             backgroundColor: '#ffbd59',

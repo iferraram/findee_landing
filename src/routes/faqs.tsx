@@ -2,7 +2,10 @@ import { ArticleTitle } from '@/components/article'
 
 export default function FaqsPage() {
   return (
-    <div style={{ backgroundColor: 'white', margin: 'auto' }} className="w-full p-20 md:w-10/12">
+    <div
+      style={{ backgroundColor: 'white', margin: 'auto' }}
+      className="w-full p-5 md:w-10/12 md:p-20"
+    >
       <ArticleTitle>Your questions answered</ArticleTitle>
 
       <details
@@ -20,16 +23,21 @@ export default function FaqsPage() {
         </p>
       </details>
 
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">How does Findee work?</summary>
         <p>
           Findee uses a smart recommendation engine that analyzes your preferences, location, and
           past interactions to suggest hidden gems and local favorites. Whether you're looking for
           healthy dining, a fun activity, or a perfect spot for a date, Findee finds the best match
           for you.
+          <br />
+          <br />
+          Findee takes into account factors like your mood, preferences, current location, and even
+          the type of experience you're seeking (e.g., relaxing, adventurous, social). The more you
+          use Findee, the smarter and more personalized its suggestions become.
         </p>
       </details>
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">Is Findee in beta testing?</summary>
         <p>
           Yes! Findee is currently in beta testing. This means that we are still improving the app
@@ -41,7 +49,7 @@ export default function FaqsPage() {
         </p>
       </details>
 
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
           What does it mean to be in beta?
         </summary>
@@ -53,7 +61,7 @@ export default function FaqsPage() {
         </p>
       </details>
 
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
           How will I know if I’m selected for the beta?
         </summary>
@@ -63,26 +71,7 @@ export default function FaqsPage() {
         </p>
       </details>
 
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">Is Findee free to use?</summary>
-        <p>
-          Yes, Findee is free to download and use! You can explore all of its features, including
-          personalized recommendations, creating wishlists, and curating your own collections of
-          places you want to visit.
-        </p>
-      </details>
-
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">
-          Can I save places I want to visit later?
-        </summary>
-        <p>
-          Absolutely! Findee lets you create personalized lists and collections where you can save
-          places you plan to visit or have already been to. Never forget a recommendation again!
-        </p>
-      </details>
-
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
           What makes Findee different from other travel apps?
         </summary>
@@ -93,24 +82,22 @@ export default function FaqsPage() {
         </p>
       </details>
 
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
           Can I share places I find on Findee with my friends?
         </summary>
         <p>
           Yes! You can easily share your favorite spots and recommendations with friends directly
-          from the app through social media, messaging, or links.
+          from the app.
         </p>
       </details>
 
-      <details className="mt-4 block rounded-sm border border-gray-200 px-4 hover:border-primary-300">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">
-          How does Findee personalize recommendations?
-        </summary>
+      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
+        <summary className="-mx-4 cursor-pointer px-4 py-3">Is Findee free to use?</summary>
         <p>
-          Findee takes into account factors like your mood, preferences, current location, and even
-          the type of experience you're seeking (e.g., relaxing, adventurous, social). The more you
-          use Findee, the smarter and more personalized its suggestions become.
+          Yes, Findee is free to download and use! You can explore all of its features, including
+          personalized recommendations, creating wishlists, and curating your own collections of
+          places you want to visit.
         </p>
       </details>
     </div>

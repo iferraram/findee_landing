@@ -9,11 +9,13 @@ function Article({
   imageAlt,
   imageSrc,
   title,
+  backgroundColor = '#eaaa00',
 }: PropsWithChildren<{
   className?: string
   imageAlt?: string
   imageSrc?: string
   title: string
+  backgroundColor?: string
 }>) {
   if (imageSrc) {
     invariant(imageAlt, 'Image alt text is required.')

@@ -1,9 +1,9 @@
-import { Article } from '@/components/article'
+import { ArticleTitle } from '@/components/article'
 
 export default function FaqsPage() {
   return (
-    <div style={{ backgroundColor: 'white', width: '80%', margin: 'auto', padding: 50 }}>
-      <h1>Your questions answered about Findee.</h1>
+    <div style={{ backgroundColor: 'white', margin: 'auto' }} className="w-full p-20 md:w-10/12">
+      <ArticleTitle>Your questions answered</ArticleTitle>
 
       <details
         className="mt-4 block rounded-sm border px-4 open:border-primary-400 hover:border-primary-300"

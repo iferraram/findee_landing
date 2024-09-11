@@ -15,13 +15,22 @@ function Hero({
   scroll: any
 }) {
   return (
-    <section className={cn('text-center lg:w-9/12 lg:py-20 lg:text-left', className)}>
+    <section className={cn('text-center lg:ml-10 lg:w-6/12 lg:py-20 lg:text-left', className)}>
       <div className="hero mx-auto w-auto max-w-6xl px-6">
         <div className="hero-inner relative lg:flex">
           <div className="hero-copy pb-16 pt-10 lg:min-w-[40rem] lg:pr-20 lg:pt-16">
             <div className="mx-auto w-full max-w-3xl">
-              <h1 className="mb-4 mt-0 text-4xl font-bold md:text-5xl">{title}</h1>
-              <p className="prose prose-xl m-auto text-gray-500">{content}</p>
+              <div className="mb-4 flex flex-row items-center">
+                <img
+                  alt="icon"
+                  height={'auto'}
+                  src="/assets/findee.png"
+                  width={60}
+                  className="mr-2"
+                />
+                <h1 className="mt-0 text-4xl font-bold md:text-5xl">{title}</h1>
+              </div>
+              <p className="prose prose-xl m-auto mb-4 text-gray-500">{content}</p>
             </div>
 
             <div>

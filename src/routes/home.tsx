@@ -1,14 +1,33 @@
 import { Hero, HeroIllustration } from '@/components/hero'
 import { Layout } from '@/components/layout'
+import FaqsPage from './faqs'
+import SupportPage from './support'
+import { useRef } from 'react'
 
 export default function HomePage() {
+  const scrollRevealRef = useRef<HTMLDivElement | null>(null)
+
+  const addToScrollRevealRef = () => {
+    if (scrollRevealRef.current) {
+      scrollRevealRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
-    <Layout>
-      <Hero
-        title="Landing template for startups"
-        content="Our landing page template works for all the devices, so you only have to setup it once, and get beautiful results forever."
-        illustration={<HeroIllustration />}
-      />
-    </Layout>
+    <>
+      <Layout>
+        <Hero
+          scroll={addToScrollRevealRef}
+          title="Findee"
+          content="Discover the world with personalized, AI-powered travel 
+
+          recommendations that match your unique preferences and 
+          
+          experiences."
+          illustration={<HeroIllustration />}
+        />
+      </Layout>
+      <SupportPage scrollRef={scrollRevealRef} />
+      <FaqsPage />
+    </>
   )
 }

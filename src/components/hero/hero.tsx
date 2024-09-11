@@ -1,5 +1,6 @@
 import { cn } from '@/utils/cn'
 import type { ReactNode } from 'react'
+import icon from '/assets/findee.png'
 
 function Hero({
   className,
@@ -23,7 +24,7 @@ function Hero({
               <div className="mb-4 flex flex-row items-center">
                 <img
                   alt="icon"
-                  height={'auto'}
+                  height={icon}
                   src="/assets/findee.png"
                   width={60}
                   className="mr-2"

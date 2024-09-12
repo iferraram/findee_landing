@@ -1288,10 +1288,6 @@ select {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 .-mt-px {
   margin-top: -1px;
 }
@@ -1453,20 +1449,12 @@ select {
 .to-secondary-400 {
   --tw-gradient-to: #fb7185 var(--tw-gradient-to-position);
 }
-.p-20 {
-  padding: 5rem;
-}
-.p-2 {
-  padding: 0.5rem;
-}
 .p-5 {
   padding: 1.25rem;
 }
-.p-4 {
-  padding: 1rem;
-}
-.p-1 {
-  padding: 0.25rem;
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -1495,10 +1483,6 @@ select {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -1800,18 +1784,6 @@ select {
   }
 }
 @media (min-width: 768px) {
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-  .md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-  .md\:mt-10 {
-    margin-top: 2.5rem;
-  }
-  .md\:mt-20 {
-    margin-top: 5rem;
-  }
   .md\:mt-16 {
     margin-top: 4rem;
   }
@@ -1832,9 +1804,6 @@ select {
   }
   .md\:p-20 {
     padding: 5rem;
-  }
-  .md\:p-4 {
-    padding: 1rem;
   }
   .md\:px-4 {
     padding-left: 1rem;
@@ -1874,15 +1843,6 @@ select {
   }
   .lg\:ml-10 {
     margin-left: 2.5rem;
-  }
-  .lg\:mt-5 {
-    margin-top: 1.25rem;
-  }
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-  .lg\:mt-20 {
-    margin-top: 5rem;
   }
   .lg\:block {
     display: block;

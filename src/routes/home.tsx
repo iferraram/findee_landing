@@ -42,8 +42,7 @@ export default function HomePage() {
           <h1 className="text-xl font-bold md:text-4xl">Findee</h1>
         </div>
         <Carousel
-          pauseOnHover
-          slideInterval={3000}
+          slide={false}
           leftControl={
             <span className="carousel-control-prev">
               <div

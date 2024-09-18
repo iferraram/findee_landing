@@ -1,11 +1,9 @@
-import { Hero, HeroIllustration } from '@/components/hero'
-import { Layout } from '@/components/layout'
 import FaqsPage from './faqs'
 import SupportPage from './support'
 import { useRef } from 'react'
 import { Carousel } from 'flowbite-react'
 import list from '/assets/list.gif'
-import review from '/assets/review.gif'
+import review from '/assets/feed.gif'
 import wish from '/assets/wish.gif'
 
 import icon from '/assets/findee.png'

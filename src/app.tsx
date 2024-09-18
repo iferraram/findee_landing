@@ -1,9 +1,9 @@
-import { ScrollToTop } from '@/components/scroll-to-top'
-import AboutPage from '@/routes/about'
-import ContactPage from '@/routes/contact'
-import FaqsPage from '@/routes/faqs'
-import HomePage from '@/routes/home'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ScrollToTop } from "@/components/scroll-to-top";
+import AboutPage from "@/routes/about";
+import ContactPage from "@/routes/contact";
+import FaqsPage from "@/routes/faqs";
+import HomePage from "@/routes/home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function App() {
   /**
@@ -12,7 +12,7 @@ export default function App() {
    *
    * @link https://vitejs.dev/guide/env-and-mode.html
    */
-  const basename = import.meta.env.BASE_URL
+  const basename = import.meta.env.BASE_URL;
 
   return (
     <BrowserRouter basename={basename}>
@@ -26,5 +26,5 @@ export default function App() {
         </Routes>
       </ScrollToTop>
     </BrowserRouter>
-  )
+  );
 }

@@ -33,7 +33,7 @@ function NewsletterForm({
     >
       <div className="mr-2 flex-shrink flex-grow">
         <label className="hidden" htmlFor="email" aria-hidden="true">
-          Email
+          Email*
         </label>
         <input
           required

@@ -40,7 +40,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
         <form className="space-y-4" ref={formRef}>
           <div>
             <label className="block text-lg font-medium leading-10" htmlFor="name">
-              Name
+              Name*
             </label>
             <input
               onChange={(e) => setName(e.target.value)}
@@ -53,7 +53,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
           </div>
           <div>
             <label className="block text-lg font-medium leading-10" htmlFor="email">
-              Email
+              Email*
             </label>
             <input
               onChange={(e) => setEmail(e.target.value)}

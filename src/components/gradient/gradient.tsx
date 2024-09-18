@@ -1,5 +1,5 @@
 import { cn } from '@/utils/cn'
-import demo from '/assets/findee_landing.gif'
+import demo from '/assets/feed.gif'
 
 function Gradient({ className }: { className?: string }) {
   return (

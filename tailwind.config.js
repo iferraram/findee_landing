@@ -1,8 +1,9 @@
 const { fontFamily } = require(`tailwindcss/defaultTheme`)
 const colors = require('tailwindcss/colors')
+const flowbite = require('flowbite-react/tailwind')
 
 module.exports = {
-  content: ['./src/**/*.{html,ts,tsx}'],
+  content: ['./src/**/*.{html,ts,tsx}', flowbite.content()],
   theme: {
     extend: {
       fontFamily: {
@@ -28,7 +29,8 @@ module.exports = {
       primary: colors.indigo,
       secondary: colors.rose,
       tertiary: colors.emerald,
+      brand: '#ffbc57',
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), flowbite.plugin()],
 }

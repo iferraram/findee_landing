@@ -47,7 +47,7 @@ function Illustration({ className }: { className?: string }) {
 
   return (
     <>
-      <div className={cn('hidden w-1/2 md:block', className)}>
+      <div className={cn('hidden w-1/4 md:block', className)}>
         <Gradient className="absolute inset-0 md:hidden" />
         <div ref={addToScrollRevealTwoRef} className="absolute left-16 top-4 lg:-top-20 lg:left-24">
           <svg width="124" height="64" viewBox="0 0 124 64" xmlns="http://www.w3.org/2000/svg">

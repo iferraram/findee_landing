@@ -3,7 +3,6 @@ import AboutPage from '@/routes/about'
 import ContactPage from '@/routes/contact'
 import FaqsPage from '@/routes/faqs'
 import HomePage from '@/routes/home'
-import SupportPage from '@/routes/support'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 export default function App() {

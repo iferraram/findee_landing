@@ -24,12 +24,12 @@ export default function HomePage() {
       text: "We'll recommend places tailored to your tastes, with personalized suggestions based on your preferences and past experiences.",
     },
     {
-      icon: wish,
+      icon: list,
       title: 'Create and Share Lists',
       text: "We'll guide you in planning the perfect itinerary, making it easy to organize every step of your journey",
     },
     {
-      icon: list,
+      icon: wish,
       title: 'Check-In & Save Locations',
       text: "You'll always know what to do next. Keep track of places you've been and save spots you want to explore in the future",
     },
@@ -46,7 +46,7 @@ export default function HomePage() {
           leftControl={
             <span className="carousel-control-prev">
               <div
-                className="hover:bg-yellow-600 flex h-10 w-10 items-center justify-center rounded-full"
+                className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-yellow-600"
                 style={{ backgroundColor: '#ffbc57' }}
               >
                 <svg
@@ -70,7 +70,7 @@ export default function HomePage() {
           rightControl={
             <span className="carousel-control-next">
               <div
-                className="hover:bg-yellow-600 flex h-10 w-10 items-center justify-center rounded-full"
+                className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-yellow-600"
                 style={{ backgroundColor: '#ffbc57' }}
               >
                 <svg

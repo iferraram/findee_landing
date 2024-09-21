@@ -19,9 +19,9 @@ export default function HomePage() {
   }
   const content = [
     {
-      icon: review,
-      title: 'Discover Hidden Gems',
-      text: "We'll recommend places tailored to your tastes, with personalized suggestions based on your preferences and past experiences.",
+      icon: wish,
+      title: 'Check-In & Save Locations',
+      text: "You'll always know what to do next. Keep track of places you've been and save spots you want to explore in the future",
     },
     {
       icon: list,
@@ -29,9 +29,9 @@ export default function HomePage() {
       text: "We'll guide you in planning the perfect itinerary, making it easy to organize every step of your journey",
     },
     {
-      icon: wish,
-      title: 'Check-In & Save Locations',
-      text: "You'll always know what to do next. Keep track of places you've been and save spots you want to explore in the future",
+      icon: review,
+      title: 'Discover Hidden Gems',
+      text: "We'll recommend places tailored to your tastes, with personalized suggestions based on your preferences and past experiences.",
     },
   ]
   return (

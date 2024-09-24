@@ -6,12 +6,14 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [instagram, setInstagram] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const formRef = useRef(null)
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     if (!formRef.current) return
+    setLoading(true)
     fetch(
       'https://script.google.com/macros/s/AKfycbwtHPuEx4CFUterXlvVC4xggGjKhA-Pi0u0fc2kk7Jo4osAHV3oxvAta7PlgjPPW9AVZw/exec',
       {
@@ -25,10 +27,12 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
         setName('')
         setEmail('')
         setSuccess(true)
+        setLoading(false)
       })
       .catch((err) => {
         setSuccess(false)
         console.log(err)
+        setLoading(false)
       })
   }
 
@@ -74,6 +78,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
               className="w-full rounded-sm border border-gray-300 bg-white px-4 py-3 text-sm text-gray-500 shadow-none"
               id="instagram"
               name="instagram"
+              placeholder="Example: @findee_app"
               value={instagram}
             />
           </div>
@@ -82,14 +87,17 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
             className={`-mt-px inline-flex cursor-pointer justify-center whitespace-nowrap rounded-sm border-0 ${!email || !name ? 'bg-gray-300' : 'bg-gradient-to-r from-secondary-500 to-secondary-400'} px-7 py-4 text-center font-medium leading-4 text-white no-underline shadow-lg`}
             onClick={handleSubmit}
             type="submit"
-            disabled={!email || !name}
+            disabled={!email || !name || loading}
           >
-            Submit
+            {loading ? 'Loading...' : 'Submit'}
           </button>
 
           {success && (
-            <div className="mt-2 text-xs italic text-gray-500">
-              🎉 Congrats! You'll receive an email from us with your access key to the Findee app
+            <div className="mt-2 text-sm italic text-gray-500">
+              Thank you for your interest in Findee! Our team is currently reviewing availability,
+              and if a slot is open, you'll receive an email with the next steps within 2 business
+              days and you'll gain access to the app on October 4th. We appreciate your patience and
+              look forward to having you onboard!{' '}
             </div>
           )}
         </form>

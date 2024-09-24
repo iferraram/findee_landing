@@ -17,7 +17,6 @@ function NewsletterForm({
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const result = await onSubmit(email)
-    console.log(result)
     setEmail('')
     setSuccess(true)
   }

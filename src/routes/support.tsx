@@ -39,7 +39,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   return (
     <div ref={scrollRef}>
       <Article title="Join Findee's Exclusive Early Access!">
-        <p>Sign up now to start exploring the beta version!</p>
+        <p>Sign up now to join the waitlist for the beta version!</p>
 
         <form className="space-y-4" ref={formRef}>
           <div>

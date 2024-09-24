@@ -42,11 +42,10 @@ export default function FaqsPage() {
           When will I receive access to Findee?
         </summary>
         <p>
-          After being selected, you will receive an email with the next steps within 2 business
-          days. You'll gain access to the app on October 4th, along with further instructions to
-          help you start exploring Findee. Please allow up to 72 hours for our team to process your
-          request and send confirmation emails, as we ensure everything runs smoothly for all beta
-          testers.
+          After being selected, you will receive an email with the next steps. You'll gain access to
+          the app on October 4th, along with further instructions to help you start exploring
+          Findee. Please allow up to 72 hours for our team to process your request and send
+          confirmation emails, as we ensure everything runs smoothly for all beta testers.
         </p>
       </details>
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">

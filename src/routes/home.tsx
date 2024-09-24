@@ -5,7 +5,6 @@ import { Carousel } from 'flowbite-react'
 import list from '/assets/list.gif'
 import review from '/assets/feed.gif'
 import wish from '/assets/wish.gif'
-
 import icon from '/assets/findee.png'
 import CarouselItem from '@/components/header/CarouselItem'
 

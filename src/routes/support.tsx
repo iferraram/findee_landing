@@ -1,5 +1,6 @@
 import { Article } from '@/components/article'
 import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   const [success, setSuccess] = useState(false)
@@ -9,6 +10,26 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   const [loading, setLoading] = useState(false)
 
   const formRef = useRef(null)
+
+  const templateParams = {
+    name: 'James',
+    notes: 'Check this out!',
+  }
+
+  const sendEmail = () => {
+    emailjs
+      .send('service_pqslc0n', 'template_jm7aoku', templateParams, {
+        publicKey: '_Ra6-1VshTXVloNf2',
+      })
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text)
+        },
+        (err) => {
+          console.log('FAILED...', err)
+        },
+      )
+  }
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
@@ -23,6 +44,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
     )
       .then((res) => res.json())
       .then((data) => {
+        sendEmail()
         setInstagram('')
         setName('')
         setEmail('')

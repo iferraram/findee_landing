@@ -22,7 +22,9 @@
     "validate": "run-p lint typecheck"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "clsx": "^2.1.1",
+    "emailjs": "^4.0.3",
     "flowbite-react": "^0.10.1",
     "gh-pages": "^6.1.1",
     "postcss-import": "^16.1.0",

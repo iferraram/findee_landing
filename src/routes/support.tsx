@@ -44,7 +44,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
     )
       .then((res) => res.json())
       .then((data) => {
-        sendEmail()
+        // sendEmail()
         setInstagram('')
         setName('')
         setEmail('')

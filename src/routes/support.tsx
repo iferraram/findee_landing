@@ -1,6 +1,9 @@
 import { Article } from '@/components/article'
 import { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+import founderWelcome from '../emails/founderWelcome'
+import onboarding1 from '../emails/onboarding1'
+
+import axios from 'axios'
 
 export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   const [success, setSuccess] = useState(false)
@@ -10,25 +13,18 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   const [loading, setLoading] = useState(false)
 
   const formRef = useRef(null)
-
-  const templateParams = {
-    name: 'James',
-    notes: 'Check this out!',
-  }
-
-  const sendEmail = () => {
-    emailjs
-      .send('service_pqslc0n', 'template_jm7aoku', templateParams, {
-        publicKey: '_Ra6-1VshTXVloNf2',
+  const sendEmail = async (subject: string, emailHtml: any, sender: string) => {
+    try {
+      // await axios.post('http://localhost:3030/api/send', {
+      await axios.post('/api/send', {
+        from: sender,
+        to: email,
+        subject,
+        message: emailHtml,
       })
-      .then(
-        (response) => {
-          console.log('SUCCESS!', response.status, response.text)
-        },
-        (err) => {
-          console.log('FAILED...', err)
-        },
-      )
+    } catch (err) {
+      console.error(err)
+    }
   }
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
@@ -44,7 +40,16 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
     )
       .then((res) => res.json())
       .then((data) => {
-        // sendEmail()
+        sendEmail(
+          `¡${name.split(' ')[0] || name}, bienvenido a la prueba beta de Findee!`,
+          founderWelcome(name.split(' ')[0] || name),
+          '"Isa de Findee" <isa@findee.mx>',
+        )
+        sendEmail(
+          `Beta Findee - Aquí están los próximos pasos`,
+          onboarding1(name.split(' ')[0] || name),
+          '"Erick de Findee" <ti@findee.mx>',
+        )
         setInstagram('')
         setName('')
         setEmail('')

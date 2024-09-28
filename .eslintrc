@@ -3,16 +3,14 @@
 
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
   },
 
-  "extends": [
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["plugin:prettier/recommended"],
 
   "parserOptions": {
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
   },
 
   "plugins": ["prettier"],
@@ -22,6 +20,6 @@
     "no-shadow": 0,
     "prettier/prettier": "error",
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
-  }
+    "react/react-in-jsx-scope": "off",
+  },
 }

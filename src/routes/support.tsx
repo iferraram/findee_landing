@@ -18,6 +18,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
     baseURL: import.meta.env.VITE_API_URL, // Set the baseURL to the API root
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
     },
   })
 

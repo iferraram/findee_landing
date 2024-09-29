@@ -14,21 +14,22 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
 
   const formRef = useRef(null)
 
-  const FindeeAPI = axios.create({
-    baseURL: import.meta.env.VITE_API_URL, // Set the baseURL to the API root
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  })
-
   const sendEmail = async (subject: string, emailHtml: any, sender: string) => {
     try {
-      await FindeeAPI.post('/send', {
-        from: sender,
-        to: email,
-        subject,
-        message: emailHtml,
-      })
+      await axios.post(
+        `${import.meta.env.VITE_API_URL}/send`,
+        {
+          from: sender,
+          to: email,
+          subject,
+          message: emailHtml,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+      )
     } catch (err) {
       console.error(err)
     }

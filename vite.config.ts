@@ -2,17 +2,15 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import { defineConfig } from 'vite'
 
-// https://vitejs.dev/config/
-
 export default defineConfig({
-  root: 'src',
+  root: 'src', // Your project root is src
   base: '/',
   build: {
-    outDir: '../dist',
+    outDir: '../dist', // The build output goes to dist
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './src'), // Alias for src directory
     },
   },
   plugins: [react()],

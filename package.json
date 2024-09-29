@@ -60,7 +60,6 @@
     "typescript": "^5.5.4",
     "vite": "^5.3.5"
   },
-  "proxy": "http://localhost:3030",
   "prettier": {
     "plugins": [
       "prettier-plugin-tailwindcss"

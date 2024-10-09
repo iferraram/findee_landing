@@ -1,5 +1,5 @@
 import { Article } from '@/components/article'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import founderWelcome from '../emails/founderWelcome'
 import onboarding1 from '../emails/onboarding1'
 
@@ -11,6 +11,7 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
   const [name, setName] = useState('')
   const [instagram, setInstagram] = useState('')
   const [loading, setLoading] = useState(false)
+  const [sendToAppStore, setSendToAppStore] = useState(false)
 
   const formRef = useRef(null)
 
@@ -70,6 +71,10 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
         setLoading(false)
       })
   }
+
+  useEffect(() => {
+    window.location.href = 'https://apps.apple.com/mx/app/findee/id6502679719'
+  }, []) // Empty dependency array ensures it runs only once after the component mounts
 
   return (
     <div ref={scrollRef}>

@@ -1,5 +1,4 @@
 import FaqsPage from './faqs'
-import SupportPage from './support'
 import { useRef } from 'react'
 import { Carousel } from 'flowbite-react'
 import list from '/assets/list.gif'
@@ -7,6 +6,7 @@ import review from '/assets/feed.gif'
 import wish from '/assets/wish.gif'
 import icon from '/assets/findee.png'
 import CarouselItem from '@/components/header/CarouselItem'
+import { Footer } from '@/components/footer'
 
 export default function HomePage() {
   const scrollRevealRef = useRef<HTMLDivElement | null>(null)
@@ -96,8 +96,10 @@ export default function HomePage() {
           ))}
         </Carousel>
       </div>
+
       {/* <SupportPage scrollRef={scrollRevealRef} /> */}
       <FaqsPage />
+      <Footer />
     </div>
   )
 }

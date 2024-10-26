@@ -39,17 +39,6 @@ export default function FaqsPage() {
       </details>
 
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">¿Qué significa estar en beta?</summary>
-        <p>
-          La prueba beta significa que la aplicación aún está en desarrollo y puede contener algunos
-          errores o características incompletas. Tus comentarios durante esta fase nos ayudarán a
-          mejorar la aplicación antes de su lanzamiento completo. Al unirte a la beta, obtendrás
-          acceso anticipado a las funciones de Findee y una oportunidad para moldear el futuro de la
-          aplicación.
-        </p>
-      </details>
-
-      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
           ¿Qué hace a Findee diferente de otras aplicaciones de viaje?
         </summary>

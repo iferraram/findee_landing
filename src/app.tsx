@@ -14,11 +14,11 @@ export default function App() {
     <BrowserRouter basename={basename}>
       <ScrollToTop>
         <Routes>
-          <Route path="/" element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="faqs" element={<FaqsPage />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/" element={<HomePage />} />
 
           {/* <Route path="support" element={<SupportPage />} /> */}
         </Routes>

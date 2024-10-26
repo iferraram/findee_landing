@@ -6,108 +6,77 @@ export default function FaqsPage() {
       style={{ backgroundColor: 'white', margin: 'auto' }}
       className="w-full p-5 md:w-10/12 md:p-20"
     >
-      <ArticleTitle>Your questions answered</ArticleTitle>
+      <ArticleTitle>Tus preguntas respondidas</ArticleTitle>
 
       <details
         className="mt-4 block rounded-sm border px-4 open:border-primary-400 hover:border-primary-300"
         open
       >
         <summary className="-mx-4 cursor-pointer border-primary-200 px-4 py-3">
-          What is Findee?
+          ¿Qué es Findee?
         </summary>
         <p>
-          Findee is a personalized travel companion app designed to help you discover new places
-          based on your preferences, mood, location, and interests. It provides unique
-          recommendations for dining, activities, and attractions, all tailored specifically for
-          you.
+          Findee es una aplicación de acompañamiento personalizada para viajes, diseñada para
+          ayudarte a descubrir nuevos lugares basados en tus preferencias, estado de ánimo,
+          ubicación e intereses. Ofrece recomendaciones únicas para comer, actividades y
+          atracciones, todas personalizadas específicamente para ti.
         </p>
       </details>
 
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">How does Findee work?</summary>
+        <summary className="-mx-4 cursor-pointer px-4 py-3">¿Cómo funciona Findee?</summary>
         <p>
-          Findee uses a smart recommendation engine that analyzes your preferences, location, and
-          past interactions to suggest hidden gems and local favorites. Whether you're looking for
-          healthy dining, a fun activity, or a perfect spot for a date, Findee finds the best match
-          for you.
+          Findee utiliza un motor de recomendaciones inteligente que analiza tus preferencias,
+          ubicación e interacciones pasadas para sugerir joyas escondidas y favoritos locales. Ya
+          sea que busques comida saludable, una actividad divertida o el lugar perfecto para una
+          cita, Findee encuentra la mejor opción para ti.
           <br />
           <br />
-          Findee takes into account factors like your mood, preferences, current location, and even
-          the type of experience you're seeking (e.g., relaxing, adventurous, social). The more you
-          use Findee, the smarter and more personalized its suggestions become.
+          Findee toma en cuenta factores como tu estado de ánimo, preferencias, ubicación actual e
+          incluso el tipo de experiencia que buscas (por ejemplo, relajante, aventurera, social).
+          Cuanto más uses Findee, más inteligentes y personalizadas se vuelven sus sugerencias.
         </p>
       </details>
+
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer border-primary-200 px-4 py-3">
-          When will I receive access to Findee?
-        </summary>
+        <summary className="-mx-4 cursor-pointer px-4 py-3">¿Qué significa estar en beta?</summary>
         <p>
-          After being selected, you will receive an email with the next steps. You'll gain access to
-          the app on October 11th, along with further instructions to help you start exploring
-          Findee. We'll send a confirmation emails with the next steps.
-        </p>
-      </details>
-      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">Is Findee in beta testing?</summary>
-        <p>
-          Yes! Findee is currently in beta testing. This means that we are still improving the app
-          and adding new features, but you can start using it now and provide valuable feedback.
-        </p>
-        <p>
-          Only the first 100 people who sign up will have access to the beta version. Once you're
-          approved, we will send you an email with your access key to start exploring Findee.
+          La prueba beta significa que la aplicación aún está en desarrollo y puede contener algunos
+          errores o características incompletas. Tus comentarios durante esta fase nos ayudarán a
+          mejorar la aplicación antes de su lanzamiento completo. Al unirte a la beta, obtendrás
+          acceso anticipado a las funciones de Findee y una oportunidad para moldear el futuro de la
+          aplicación.
         </p>
       </details>
 
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
-          What does it mean to be in beta?
+          ¿Qué hace a Findee diferente de otras aplicaciones de viaje?
         </summary>
         <p>
-          Beta testing means that the app is still in development and may contain some bugs or
-          incomplete features. Your feedback during this phase will help us improve the app before
-          the full launch. By joining the beta, you’ll get early access to Findee’s features and a
-          chance to shape the future of the app.
+          A diferencia de otras aplicaciones que muestran los mismos lugares de moda, Findee se
+          enfoca en descubrir lugares únicos y menos conocidos adaptados a tus gustos específicos,
+          ubicación y estado de ánimo. No se trata de lo que es popular, sino de lo que es adecuado
+          para ti.
         </p>
       </details>
 
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
         <summary className="-mx-4 cursor-pointer px-4 py-3">
-          How will I know if I’m selected for the beta?
+          ¿Puedo compartir los lugares que encuentro en Findee con mis amigos?
         </summary>
         <p>
-          If you're one of the first 100 people to sign up, you'll receive an email from us with
-          your access key to the Findee app. Keep an eye on your inbox for the confirmation!
+          ¡Sí! Puedes compartir fácilmente tus lugares y recomendaciones favoritos con amigos
+          directamente desde la aplicación.
         </p>
       </details>
 
       <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">
-          What makes Findee different from other travel apps?
-        </summary>
+        <summary className="-mx-4 cursor-pointer px-4 py-3">¿Findee es gratis?</summary>
         <p>
-          Unlike other apps that show the same trendy spots, Findee focuses on discovering unique,
-          lesser-known places tailored to your specific tastes, location, and mood. It's not about
-          what's popular—it's about what's right for you.
-        </p>
-      </details>
-
-      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">
-          Can I share places I find on Findee with my friends?
-        </summary>
-        <p>
-          Yes! You can easily share your favorite spots and recommendations with friends directly
-          from the app.
-        </p>
-      </details>
-
-      <details className="mt-4 block rounded-sm border border-gray-200 px-1 hover:border-primary-300 md:px-4 md:py-2">
-        <summary className="-mx-4 cursor-pointer px-4 py-3">Is Findee free to use?</summary>
-        <p>
-          Yes, Findee is free to download and use! You can explore all of its features, including
-          personalized recommendations, creating wishlists, and curating your own collections of
-          places you want to visit.
+          Sí, Findee es gratis para descargar y usar. Puedes explorar todas sus funciones,
+          incluyendo recomendaciones personalizadas, creación de listas de deseos y organización de
+          tus propias colecciones de lugares que quieres visitar.
         </p>
       </details>
     </div>

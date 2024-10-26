@@ -19,23 +19,24 @@ export default function HomePage() {
   const content = [
     {
       icon: wish,
-      title: 'Check-In & Save Locations',
-      text: "You'll always know what to do next. Keep track of places you've been and save spots you want to explore in the future",
+      title: 'Guarda los lugares que quieres visitar',
+      text: 'No te quedes sin planes. Lleva un registro de los lugares que has visitado y guarda los que deseas visitar en el futuro.',
     },
     {
       icon: list,
-      title: 'Create and Share Lists',
-      text: "We'll guide you in planning the perfect itinerary, making it easy to organize every step of your journey",
+      title: 'Crea y comparte listas',
+      text: 'Te ayudaremos a planear el itinerario perfecto, haciendo que sea fácil organizar cada paso de tu viaje.',
     },
     {
       icon: review,
-      title: 'Discover Hidden Gems',
-      text: "We'll recommend places tailored to your tastes, with personalized suggestions based on your preferences and past experiences.",
+      title: 'Descubre rincones escondidos',
+      text: 'Te recomendaremos lugares adaptados a tus gustos, con sugerencias personalizadas basadas en tus preferencias y experiencias pasadas.',
     },
   ]
+
   return (
-    <div className="h-screen">
-      <div className="h-screen bg-white">
+    <div className="">
+      <div className="bg-white">
         <div className="flex w-screen items-center justify-center pt-5 lg:hidden lg:flex-col">
           <img alt="icon" height={'auto'} src={icon} className="w-10 p-2 md:m-0 md:w-14" />
           <h1 className="text-xl font-bold md:text-4xl">Findee</h1>
@@ -44,10 +45,7 @@ export default function HomePage() {
           slide={false}
           leftControl={
             <span className="carousel-control-prev">
-              <div
-                className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-yellow-600"
-                style={{ backgroundColor: '#ffbc57' }}
-              >
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-secondary-500 to-secondary-400 hover:bg-yellow-600">
                 <svg
                   aria-hidden="true"
                   className="h-6 w-6 text-white"
@@ -68,10 +66,7 @@ export default function HomePage() {
           }
           rightControl={
             <span className="carousel-control-next">
-              <div
-                className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-yellow-600"
-                style={{ backgroundColor: '#ffbc57' }}
-              >
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-secondary-500 to-secondary-400 hover:bg-yellow-600">
                 <svg
                   aria-hidden="true"
                   className="h-6 w-6 text-white"
@@ -101,7 +96,7 @@ export default function HomePage() {
           ))}
         </Carousel>
       </div>
-      <SupportPage scrollRef={scrollRevealRef} />
+      {/* <SupportPage scrollRef={scrollRevealRef} /> */}
       <FaqsPage />
     </div>
   )

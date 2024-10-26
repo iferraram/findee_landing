@@ -72,9 +72,9 @@ export default function SupportPage({ scrollRef }: { scrollRef: any }) {
       })
   }
 
-  useEffect(() => {
-    window.location.href = 'https://apps.apple.com/mx/app/findee/id6502679719'
-  }, []) // Empty dependency array ensures it runs only once after the component mounts
+  // useEffect(() => {
+  //   window.location.href = 'https://apps.apple.com/mx/app/findee/id6502679719'
+  // }, []) // Empty dependency array ensures it runs only once after the component mounts
 
   return (
     <div ref={scrollRef}>
